@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Birds</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!-- Connecting to Bootstrap -->
+</head>
+<body class="container">
+    <br>
+    <h1>Local Bird Sightings</h1>
+    <br>
+    <form>
+        <div class="form-row"> <!-- Created a form with Bootstrap styling -->
+            <div class="col">
+                <input type="text" class="form-control" id="birdName" placeholder="Bird Name">
+            </div>
+            <div class="col">
+                <input type="date" class="form-control" id="sightingDate" placeholder="Sighting Date">
+            </div>
+        </div>
+        <br>
+        <div>
+            <button id="add" class="btn btn-primary form-control">Submit</button> <!-- Created a submit button -->
+        </div>
+    </form>
+    <br>
+    <table id='bird-list' class="table"> <!-- Created a table to hold submitted data with IDs to refer to in JS -->
+        <thead id="tHead">
+            <th scope="col">#</th>
+            <th scope="col">Bird Name</th>
+            <th scope="col">Bird Sighting Date</th>
+        </thead>
+        <tbody id="tBody">
+            
+        </tbody>
+    </table>
+
+
+
+
+    <script src="index.js"></script> <!-- Added links to style sheets and JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
